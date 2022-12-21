@@ -12,11 +12,26 @@
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": false,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "strictPropertyInitialization": false
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@application/*": [
+        "./src/application/*"
+      ],
+      "@helpers/*": [
+        "./src/helpers/*"
+      ],
+      "infra/*": [
+        "./src/infra/*"
+      ],
+      "@test/*": [
+        "./test/*"
+      ]
+    }
   }
 }
